@@ -1,6 +1,6 @@
 <?php
-
-use Illuminate\Support\Facades\Route;
+ use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Crudcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route:: get('/show-data',[ Crudcontroller::class ,'showdata']);
+Route:: get('/add-data',[ Crudcontroller::class ,'addData']);
+Route:: post('/store-data',[ Crudcontroller::class ,'storeData']);
+Route:: get('/edite-data/{id}',[ Crudcontroller::class ,'editeData']);
+Route:: post('/update-data/{id}',[ Crudcontroller::class ,'updateData']);
+Route:: get('/delete-data/{id}',[ Crudcontroller::class ,'deleteData']);
+
+
