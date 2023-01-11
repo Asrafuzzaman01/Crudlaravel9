@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Laravel basic tutorial </title>
+<title>All Student Info... </title>
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -38,8 +38,10 @@ $(document).ready(function(){
           <li class="nav-item">
             <a class="nav-link text-warninig" href="{{url('/show-data')}}">All User </a>
           </li>
+
+          
           <li class="nav-item">
-            <a class="nav-link text-warning" href="{{url('/add-data')}}">Registration</a>
+            <a class="nav-link text-warning" href="{{url('/logout')}}">Logout</a>
           </li>
       
           <!-- Dropdown -->
